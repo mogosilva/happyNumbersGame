@@ -223,12 +223,7 @@ table {
   padding: 20px 0px; }
   .navbar-header img {
     width: 8em;
-    vertical-align: middle;
-    transform: rotate(0deg);
-    transition: all 0.3s ease-in-out; }
-  .navbar-header img:hover {
-    transform: rotate(25deg);
-    width: 9em; }
+    vertical-align: middle; }
 
 .form-group {
   text-align: center; }
@@ -369,6 +364,13 @@ input[type="number"] {
 
 /*MEDIA QUERY*/
 @media (min-width: 768px) {
+  .navbar-header img {
+    transform: rotate(0deg);
+    transition: all 0.3s ease-in-out; }
+  .navbar-header img:hover {
+    transform: rotate(25deg);
+    width: 9em; }
+
   input[type="number"] {
     width: 17em; } }
 
