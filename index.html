@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Happy Numbers Game</title>
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="icon" href="img/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--BOOTSTRAP -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <!-- Font-Awesome CSS -->
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+        <!--CUSTOM -->
+        <link rel="stylesheet" href="css/main.css">
+	</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-static-top centerText">
+		<div class="navbar-header clearfix">
+			<img src="img/happyLogo.svg">
+			<h1>HAPPY</br>NUMBERS</br>GAME!</h1>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-10 col-xs-offset-1  col-md-4 col-md-offset-4 centerText mainMenu start">
+				<h2>Guess what the 3 Happy Numbers are!</h2>
+				<button class="btn btn-primary" value="startGame">START GAME</button>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4">
+		<div class="happyForm">
+
+				<div class="win">
+					<p>You found the Happy Numbers!</p>
+					<img src="img/win1.svg" class="img-responsive shake-slow shake-constant">
+					<img src="img/win2.svg" class="img-responsive shake-slow shake-constant1">
+					<img src="img/win3.svg" class="img-responsive shake-slow shake-constant2">
+					<p>You found it in <span class="tries">1 try!</span></p>
+					<p>SCORE: <span class="score">100</span></p>
+					<button class="btn btn-warning restart">RESTART GAME?</button>
+				</div>
+
+				<div class="lose">
+					<p>Sorry those are not the happy numbers</p>
+					<i class="fa fa-frown-o fa-2x" aria-hidden="true"></i>
+					<p>SCORE: <span class="score"></span></p>
+					<button class="btn btn-primary continue">KEEP TRYING?</button>
+					<p>OR</p>
+					<button class="btn btn-warning restart">RESTART GAME?</button>
+				</div>
+
+				<div class="hint">
+					<p>The Happy Numbers are:</p>
+					<p><span></span></p>
+					<p>SCORE: <span class="score"></span></p>
+					<button class="btn btn-warning restart">RESTART GAME?</button>
+				</div>
+
+			<form method="post" id="happyNumbersGame">
+				<div class="form-group centerText">
+					<input type="number" placeholder="Guess your First Number" id="A" min="1" max="10" required>
+				</div>
+
+				<div class="form-group centerText">
+				<input type="number" placeholder="Guess your Second Number" id="B" min="0" max="10" required>
+				</div>
+
+				<div class="form-group centerText">
+				<input type="number" placeholder="Guess your Third Number" id="C" min="0" max="10" required>
+				</div>	
+			</form>
+
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1 centerText">
+
+					<button type="submit" form="happyNumbersGame" class="btn btn-primary">SUBMIT</button>
+					<button id="cheat" class="btn btn-danger">WHAT'S THE ANSWER?!</button>
+
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1 centerText response">
+				</div>
+			</div>
+
+
+
+		</div> <!--END OF happyForm-->
+	</div>
+
+
+
+<!--JQUERY -->
+<script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+<!--BOOTSTRAP -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<!--CUSTOM -->
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

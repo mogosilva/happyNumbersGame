@@ -1,0 +1,375 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:400,800,900);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* * * * * * * * * * * * * * * * * * * * *\  
+  CSShake :: shake-slow
+  v1.5.0
+  CSS classes to move your DOM
+  (c) 2015 @elrumordelaluz
+  http://elrumordelaluz.github.io/csshake/
+  Licensed under MIT
+\* * * * * * * * * * * * * * * * * * * * */
+.shake-slow {
+  display: inline-block;
+  transform-origin: center center; }
+
+.shake-freeze,
+.shake-constant.shake-constant--hover:hover,
+.shake-trigger:hover .shake-constant.shake-constant--hover {
+  animation-play-state: paused; }
+
+.shake-freeze:hover,
+.shake-trigger:hover .shake-freeze, .shake-slow:hover,
+.shake-trigger:hover .shake-slow {
+  animation-play-state: running; }
+
+@keyframes shake-slow {
+  2% {
+    transform: translate(0px, 4px) rotate(-0.5deg); }
+  4% {
+    transform: translate(-3px, 9px) rotate(-0.5deg); }
+  6% {
+    transform: translate(4px, 10px) rotate(-0.5deg); }
+  8% {
+    transform: translate(0px, -2px) rotate(0.5deg); }
+  10% {
+    transform: translate(9px, -9px) rotate(1.5deg); }
+  12% {
+    transform: translate(-9px, 9px) rotate(1.5deg); }
+  14% {
+    transform: translate(10px, -1px) rotate(-0.5deg); }
+  16% {
+    transform: translate(7px, -1px) rotate(0.5deg); }
+  18% {
+    transform: translate(-8px, 8px) rotate(1.5deg); }
+  20% {
+    transform: translate(1px, -9px) rotate(0.5deg); }
+  22% {
+    transform: translate(7px, -6px) rotate(0.5deg); }
+  24% {
+    transform: translate(-8px, -4px) rotate(-1.5deg); }
+  26% {
+    transform: translate(-9px, 5px) rotate(-1.5deg); }
+  28% {
+    transform: translate(7px, 3px) rotate(-1.5deg); }
+  30% {
+    transform: translate(9px, 3px) rotate(2.5deg); }
+  32% {
+    transform: translate(2px, -6px) rotate(-1.5deg); }
+  34% {
+    transform: translate(10px, -7px) rotate(2.5deg); }
+  36% {
+    transform: translate(-2px, 10px) rotate(-2.5deg); }
+  38% {
+    transform: translate(-6px, -8px) rotate(-1.5deg); }
+  40% {
+    transform: translate(1px, 0px) rotate(-2.5deg); }
+  42% {
+    transform: translate(10px, 8px) rotate(3.5deg); }
+  44% {
+    transform: translate(4px, 2px) rotate(2.5deg); }
+  46% {
+    transform: translate(10px, -2px) rotate(-1.5deg); }
+  48% {
+    transform: translate(10px, 0px) rotate(-2.5deg); }
+  50% {
+    transform: translate(-2px, 5px) rotate(-0.5deg); }
+  52% {
+    transform: translate(4px, 1px) rotate(3.5deg); }
+  54% {
+    transform: translate(-8px, -5px) rotate(2.5deg); }
+  56% {
+    transform: translate(8px, -8px) rotate(2.5deg); }
+  58% {
+    transform: translate(-3px, -6px) rotate(1.5deg); }
+  60% {
+    transform: translate(-3px, -5px) rotate(0.5deg); }
+  62% {
+    transform: translate(-1px, 0px) rotate(-0.5deg); }
+  64% {
+    transform: translate(2px, 10px) rotate(3.5deg); }
+  66% {
+    transform: translate(-4px, -1px) rotate(-0.5deg); }
+  68% {
+    transform: translate(8px, -5px) rotate(1.5deg); }
+  70% {
+    transform: translate(-3px, 2px) rotate(-1.5deg); }
+  72% {
+    transform: translate(9px, -3px) rotate(-0.5deg); }
+  74% {
+    transform: translate(-2px, 6px) rotate(1.5deg); }
+  76% {
+    transform: translate(-7px, -8px) rotate(-1.5deg); }
+  78% {
+    transform: translate(7px, -4px) rotate(0.5deg); }
+  80% {
+    transform: translate(-4px, -5px) rotate(-1.5deg); }
+  82% {
+    transform: translate(8px, 6px) rotate(3.5deg); }
+  84% {
+    transform: translate(0px, -7px) rotate(-1.5deg); }
+  86% {
+    transform: translate(0px, 1px) rotate(3.5deg); }
+  88% {
+    transform: translate(-6px, -3px) rotate(2.5deg); }
+  90% {
+    transform: translate(1px, 3px) rotate(-0.5deg); }
+  92% {
+    transform: translate(-9px, -4px) rotate(-2.5deg); }
+  94% {
+    transform: translate(-7px, -6px) rotate(2.5deg); }
+  96% {
+    transform: translate(5px, -3px) rotate(-1.5deg); }
+  98% {
+    transform: translate(8px, 4px) rotate(0.5deg); }
+  0%, 100% {
+    transform: translate(0, 0) rotate(0); } }
+.shake-slow:hover,
+.shake-trigger:hover .shake-slow,
+.shake-slow.shake-freeze,
+.shake-slow.shake-constant {
+  animation: shake-slow 9s ease-in-out infinite; }
+
+.shake-slow.shake-constant1 {
+  animation: shake-slow 10s ease-in-out infinite; }
+
+.shake-slow.shake-constant2 {
+  animation: shake-slow 11s ease-in-out infinite; }
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box;
+  /* Firexfox */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box;
+  /* IE */ }
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+.clear {
+  clear: both; }
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px;
+  /* note the padding around a right floated image */ }
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0;
+  /* note the padding around a left floated image */ }
+
+/*BOOTSTRAP OVERRIDE*/
+.navbar {
+  background: url("../img/numbers.svg");
+  border-bottom: 10px solid #1f5d68; }
+
+.navbar-header {
+  float: none;
+  display: inline-block;
+  padding: 20px 0px; }
+  .navbar-header img {
+    width: 8em;
+    vertical-align: middle;
+    transform: rotate(0deg);
+    transition: all 0.3s ease-in-out; }
+  .navbar-header img:hover {
+    transform: rotate(25deg);
+    width: 9em; }
+
+.form-group {
+  text-align: center; }
+
+.img-responsive {
+  display: inline-block; }
+
+/*BOOTSTRAP OVERRIDE END*/
+body {
+  font-family: 'Alegreya Sans', sans-serif;
+  background-color: #F6FFCF; }
+
+h1 {
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+  color: #F4D726;
+  font-weight: 900;
+  font-size: 3em;
+  padding-left: 12px; }
+
+.mainMenu {
+  font-size: 1.5em;
+  background: #78BF4A;
+  padding: 20px;
+  border-radius: 5px;
+  opacity: 0;
+  display: none;
+  transition: opacity 0.4s ease-in-out; }
+  .mainMenu h2 {
+    padding-bottom: 10px;
+    font-weight: 800;
+    color: #0E4D54; }
+
+.happyForm {
+  opacity: 0;
+  display: none;
+  transition: opacity 0.4s ease-in-out;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  background: transparent; }
+
+.start {
+  opacity: 1;
+  display: block; }
+
+/* WIN, LOSE, AND CHEAT WINDOWS */
+.win, .lose, .hint {
+  text-align: center;
+  background-color: #78BF4A;
+  color: #fff;
+  padding: 40px 20px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: -50em;
+  right: 50em;
+  opacity: 0;
+  transition: left 0.8s ease-in-out, right 0.8s ease-in-out, opacity 1s ease-in-out;
+  border-radius: 25px;
+  font-weight: 800;
+  font-size: 1.5em; }
+
+.active {
+  left: 5%;
+  right: 5%;
+  opacity: 1; }
+
+.lose {
+  background-color: #0E4D54; }
+  .lose p {
+    padding: 10px; }
+  .lose p:nth-child(3) {
+    padding: 0px; }
+  .lose .btn-warning {
+    margin-top: 0px; }
+
+.hint {
+  background-color: #3DB9CF; }
+  .hint p {
+    padding: 10px; }
+
+/* END OF WINDOWS */
+input[type="number"] {
+  width: 14em;
+  text-align: center;
+  border: 2px solid #3DB9CF;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #0E4D54; }
+
+/* BUTTON STYLING */
+.btn-primary, .btn-danger, .btn-warning {
+  background-color: #3DB9CF;
+  border: none;
+  font-weight: 600;
+  font-size: 1em;
+  margin-bottom: 10px;
+  padding: 6px 10px;
+  -moz-box-shadow: 0px 6px 0px #12646d;
+  -webkit-box-shadow: 0px 6px 0px #12646d;
+  box-shadow: 0px 6px 0px #12646d; }
+
+.btn-danger {
+  background-color: #E74030;
+  -moz-box-shadow: 0px 6px 0px #75211F;
+  -webkit-box-shadow: 0px 6px 0px #75211F;
+  box-shadow: 0px 6px 0px #75211F; }
+
+.btn-danger:hover {
+  background-color: #742018; }
+
+.btn-warning {
+  margin-top: 20px;
+  color: #000;
+  background-color: #F4D726;
+  -moz-box-shadow: 0px 6px 0px #F79A2B;
+  -webkit-box-shadow: 0px 6px 0px #F79A2B;
+  box-shadow: 0px 6px 0px #F79A2B; }
+
+.btn-warning:hover {
+  background-color: #7a6c13; }
+
+/*END OF BUTTON STYLING*/
+.tries {
+  padding-bottom: 5px;
+  border-bottom: 5px solid #f0ff94; }
+
+.score {
+  border-bottom: none;
+  font-size: 1.8em; }
+
+.centerText {
+  text-align: center; }
+
+/*MEDIA QUERY*/
+@media (min-width: 768px) {
+  input[type="number"] {
+    width: 17em; } }
+
+/*# sourceMappingURL=main.css.map */

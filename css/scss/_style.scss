@@ -1,0 +1,200 @@
+
+
+/*BOOTSTRAP OVERRIDE*/
+.navbar{
+  background:url("../img/numbers.svg");
+  border-bottom: 10px solid $lBlue/2;
+}
+.navbar-header{
+  float: none;
+  display: inline-block;
+  padding: 20px 0px;
+  img{
+    width: 8em;
+    vertical-align: middle;
+    transform: rotate(0deg);
+    transition: all 0.3s ease-in-out;
+  }
+  img:hover{
+    transform: rotate(25deg);
+    width: 9em;
+  }
+}
+
+.form-group{
+  text-align: center;
+}
+
+.img-responsive{
+  display: inline-block;
+}
+
+/*BOOTSTRAP OVERRIDE END*/
+
+
+
+body{
+  font-family: 'Alegreya Sans', sans-serif;
+  background-color: #F6FFCF;
+}
+
+
+h1{
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+  color: #F4D726;
+  font-weight: 900;
+  font-size: 3em;
+  padding-left:12px;
+
+}
+
+.mainMenu{
+  font-size: 1.5em;
+  background: $win;
+  padding:20px;
+  border-radius: 5px;
+  opacity: 0;
+  display: none;
+  transition: opacity 0.4s ease-in-out;
+
+  h2{
+    padding-bottom: 10px;
+    font-weight: 800;
+    color: $dBlue;
+  }
+
+}
+
+
+.happyForm{
+  opacity: 0;
+  display: none;
+  transition: opacity 0.4s ease-in-out;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  background: transparent;
+}
+
+.start{
+  opacity: 1;
+  display: block;
+}
+
+/* WIN, LOSE, AND CHEAT WINDOWS */
+.win, .lose, .hint{
+  text-align: center;
+  background-color: $win;
+  color: #fff;
+  padding: 40px 20px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: -50em;
+  right: 50em;
+  opacity: 0;
+  transition: left 0.8s ease-in-out, right 0.8s ease-in-out, opacity 1s ease-in-out;
+  border-radius:25px;
+  font-weight: 800;
+  font-size: 1.5em;
+  
+}
+.active{
+  left: 5%;
+  right: 5%;
+  opacity: 1;
+}
+.lose{
+  background-color: $dBlue;
+  p{
+    padding: 10px;
+  }
+  p:nth-child(3){
+    padding:0px;
+  }
+  .btn-warning{
+    margin-top: 0px;
+  }
+
+}
+.hint{
+  background-color: $lBlue;
+  p{
+    padding: 10px;
+  }
+}
+
+/* END OF WINDOWS */
+
+input[type="number"]{
+  width: 14em;
+  text-align: center;
+  border: 2px solid $lBlue;
+  border-radius: 5px;
+  font-weight: 600;
+  color: $dBlue;
+}
+
+/* BUTTON STYLING */
+.btn-primary, .btn-danger, .btn-warning{
+  background-color: $lBlue;
+  border: none;
+  font-weight: 600;
+  font-size: 1em;
+  margin-bottom: 10px;
+  padding: 6px 10px;
+  -moz-box-shadow:    0px 6px 0px $dBlue*1.3;
+  -webkit-box-shadow: 0px 6px 0px $dBlue*1.3;
+  box-shadow:         0px 6px 0px $dBlue*1.3;
+}
+
+.btn-danger{
+  background-color: $cheat;
+  -moz-box-shadow:    0px 6px 0px #75211F;
+  -webkit-box-shadow: 0px 6px 0px #75211F;
+  box-shadow:         0px 6px 0px #75211F;
+}
+.btn-danger:hover{
+  background-color: $cheat/2;
+}
+
+.btn-warning{
+  margin-top: 20px;
+  color: #000;
+  background-color: $restart;
+  -moz-box-shadow:    0px 6px 0px #F79A2B;
+  -webkit-box-shadow: 0px 6px 0px #F79A2B;
+  box-shadow:         0px 6px 0px #F79A2B;
+}
+.btn-warning:hover{
+  background-color: $restart/2;
+}
+
+/*END OF BUTTON STYLING*/
+.tries{
+  padding-bottom: 5px;
+  border-bottom: 5px solid $win*2;
+}
+
+.score{
+  border-bottom: none;
+  font-size: 1.8em;
+}
+
+.centerText{
+  text-align: center;
+}
+
+/*MEDIA QUERY*/
+
+@media (min-width: 768px){
+
+  input[type="number"]{
+  width: 17em;
+  }
+
+}
